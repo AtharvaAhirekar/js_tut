@@ -2,7 +2,7 @@
 // Object.create
 
 // Object Literals 
-
+const newsym = Symbol("1234");
 const symb = Symbol("Key1") ;
 
 const user1 = {
@@ -11,6 +11,7 @@ const user1 = {
     Location : "Ayodhya",
     spouse : "Sita",
     brothers : ["Bharat" , "Laxman" , "Shatrughna"],
+    [newsym] : "1234",
 }
 
 // console.log(user1);
@@ -32,6 +33,8 @@ console.log("......................................................");
 user1.greetings = function(){
     console.log("Jay Shree Ram");
 }
+
+
 
 console.log(user1.greetings());
 
