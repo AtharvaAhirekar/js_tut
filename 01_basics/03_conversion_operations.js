@@ -12,8 +12,8 @@ let numscore = Number(score1);
 // console.log(numscore);
 
 let gamename = "GTA5"
-// console.log(gamename);
-// console.log(typeof gamename);
+console.log(gamename);
+console.log(typeof gamename);
 
 let gamenumname  = Number(gamename);
 // console.log(gamenumname);
