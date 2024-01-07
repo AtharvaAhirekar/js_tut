@@ -2,8 +2,11 @@
 
 // Declare 
 // accessed by "." or obj1["name"]
-// Freeze = To Frezze the value of any key in the Object 
+// Freeze = To Frezze the value of any key in the Object ==> Object.freeze(obj1)
 // this operator use to get the variable which exist with in declared scope 
+// obj1.greeting = function(){
+//     console.log(`Hare  ${this.name} hare ram`)
+// }
 
 
 const mysym = Symbol("mykey1")
