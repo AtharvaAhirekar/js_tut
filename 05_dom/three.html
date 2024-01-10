@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class = "language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(langname){
+        const list = document.createElement('li');
+        const item = document.createTextNode(`${langname}`)
+        list.appendChild(item)
+        const tobeadd = document.querySelector(".language");
+        tobeadd.appendChild(list)
+        
+        // const list = document.createElement('li')
+        // list.innerHTML = `${langname}`
+        // document.querySelector(".language").appendChild(list)
+    }
+    addlanguage('C++')
+    addlanguage('Java')
+    addlanguage('Python')
+    addlanguage('Ruby')
+    addlanguage('Golang')
+
+    //Edit 
+    const seclang = document.querySelector("li:nth-child(3)")
+    // seclang.innerHTML = 'Mojo' {Unoptimize thing}
+    const news = document.createElement('li')
+    news.textContent = "Mojo"
+    seclang.replaceWith(news)
+
+    //Edit
+    const firstlang = document.querySelector("li:nth-child(6)")
+    firstlang.outerHTML = '<li> Bhai Lang </li>'
+
+    // Remove
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove();
+
+
+</script>
+</html>
